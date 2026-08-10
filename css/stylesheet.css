@@ -1,589 +1,2220 @@
-/* ==========================
-   Reset
-========================== */
+/* =========================================================
+PORTFOLIO WEBSITE - MAIN STYLESHEET
+========================================================= */
+
+/* =========================================================
+
+1. RESET & GLOBAL STYLES
+   ========================================================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  }
+
+html {
+scroll-behavior: smooth;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-color: #f5f7fa;
+color: #333333;
+line-height: 1.6;
+}
+
+img {
+max-width: 100%;
+height: auto;
+display: block;
+}
+
+a {
+transition: all 0.3s ease;
+}
+
+section {
+scroll-margin-top: 80px;
+}
+
+/* =========================================================
+2. HEADER & NAVIGATION
+========================================================= */
+
+header {
+background-color: #003366;
+width: 100%;
+position: sticky;
+top: 0;
+z-index: 1000;
+box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav {
+max-width: 1200px;
+margin: 0 auto;
+min-height: 70px;
+padding: 15px 30px;
+
+```
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 30px;
+```
+
+}
+
+.logo {
+color: #ffffff;
+text-decoration: none;
+font-size: 1.5rem;
+font-weight: bold;
+white-space: nowrap;
+}
+
+.logo:hover {
+color: #66b3ff;
+}
+
+nav ul {
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 25px;
+
+```
+list-style: none;
+```
+
+}
+
+nav ul li {
+margin: 0;
+}
+
+nav ul li a {
+color: #ffffff;
+text-decoration: none;
+font-size: 0.95rem;
+font-weight: 500;
+padding: 8px 4px;
+}
+
+nav ul li a:hover {
+color: #66b3ff;
+}
+
+/* =========================================================
+3. HERO SECTION
+========================================================= */
+
+.hero {
+max-width: 1200px;
+min-height: calc(100vh - 70px);
+margin: 0 auto;
+padding: 80px 40px;
+
+```
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 60px;
+```
+
+}
+
+.hero-content {
+flex: 1;
+max-width: 650px;
+}
+
+.hero-content h1 {
+color: #003366;
+font-size: 3rem;
+line-height: 1.2;
+margin-bottom: 12px;
+}
+
+.hero-content h2 {
+color: #0055aa;
+font-size: 1.6rem;
+margin-bottom: 25px;
+}
+
+.hero-content p {
+color: #444444;
+font-size: 1.05rem;
+line-height: 1.8;
+margin-bottom: 15px;
+}
+
+.hero-content > a {
+display: inline-block;
+margin-top: 15px;
+padding: 13px 24px;
+
+```
+background-color: #003366;
+color: #ffffff;
+
+text-decoration: none;
+font-weight: bold;
+
+border-radius: 6px;
+
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+```
+
+}
+
+.hero-content > a:hover {
+background-color: #0055aa;
+transform: translateY(-2px);
+}
+
+/* =========================================================
+4. HERO IMAGE
+========================================================= */
+
+.hero-image {
+flex: 1;
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+```
+
+}
+
+.hero-image img {
+width: 280px;
+height: 280px;
+
+```
+object-fit: cover;
+
+border-radius: 50%;
+
+border: 6px solid #003366;
+
+box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.18);
+
+background-color: #ffffff;
+```
+
+}
+
+/* =========================================================
+5. GENERAL SECTION STYLING
+========================================================= */
+
+#about,
+#skills,
+#projects,
+#education,
+#experience,
+#contact {
+margin: 60px auto;
+}
+
+#about h2,
+#skills h2,
+#projects h2,
+#education h2,
+#experience h2,
+#contact h2 {
+color: #003366;
+text-align: center;
+font-size: 2.2rem;
+margin-bottom: 35px;
+}
+
+/* =========================================================
+6. ABOUT SECTION
+========================================================= */
+
+#about {
+max-width: 900px;
+padding: 60px 30px;
+text-align: center;
+}
+
+#about h2 {
+margin-bottom: 25px;
+}
+
+#about p {
+color: #444444;
+font-size: 1rem;
+line-height: 1.8;
+margin-bottom: 25px;
+}
+
+#about h3 {
+color: #003366;
+font-size: 1.5rem;
+margin: 35px 0 15px;
+}
+
+/* =========================================================
+7. SKILLS SECTION
+========================================================= */
+
+#skills {
+max-width: 1100px;
+padding: 60px 30px;
+}
+
+.skills-container {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+gap: 25px;
+}
+
+.skill-card {
+width: 180px;
+min-height: 130px;
+
+```
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 25px;
+
+background-color: #ffffff;
+
+border-radius: 12px;
+
+box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+```
+
+}
+
+.skill-card h3 {
+color: #003366;
+font-size: 1.2rem;
+text-align: center;
+}
+
+.skill-card:hover {
+transform: translateY(-8px);
+
+```
+box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.15);
+```
+
+}
+
+/* =========================================================
+8. PROJECTS SECTION
+========================================================= */
+
+#projects {
+max-width: 1100px;
+padding: 60px 30px;
+}
+
+.projects-container {
+display: grid;
+
+```
+grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+gap: 25px;
+```
+
+}
+
+.project-card {
+background-color: #ffffff;
+
+```
+padding: 30px;
+
+border-radius: 12px;
+
+box-shadow:
+    0 4px 12px rgba(0, 0, 0, 0.08);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+
+display: flex;
+flex-direction: column;
+```
+
+}
+
+.project-card:hover {
+transform: translateY(-8px);
+
+```
+box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.15);
+```
+
+}
+
+.project-card h3 {
+color: #003366;
+font-size: 1.3rem;
+margin-bottom: 15px;
+}
+
+.project-card p {
+color: #555555;
+line-height: 1.7;
+margin-bottom: 20px;
+flex-grow: 1;
+}
+
+.project-card a {
+display: inline-block;
+align-self: flex-start;
+
+```
+padding: 10px 18px;
+
+background-color: #003366;
+color: #ffffff;
+
+border-radius: 6px;
+
+text-decoration: none;
+font-weight: 500;
+```
+
+}
+
+.project-card a:hover {
+background-color: #0055aa;
+transform: translateY(-2px);
+}
+
+/* =========================================================
+9. EDUCATION SECTION
+========================================================= */
+
+#education {
+max-width: 1000px;
+padding: 60px 30px;
+}
+
+.education-timeline {
+position: relative;
+
+```
+padding-left: 45px;
+
+border-left:
+    4px solid #003366;
+```
+
+}
+
+.timeline-item {
+position: relative;
+
+```
+background-color: #ffffff;
+
+padding: 25px 30px;
+
+margin-bottom: 30px;
+
+border-radius: 12px;
+
+box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+```
+
+}
+
+.timeline-item::before {
+content: "";
+
+```
+position: absolute;
+
+width: 18px;
+height: 18px;
+
+left: -56px;
+top: 27px;
+
+background-color: #003366;
+
+border: 4px solid #ffffff;
+
+border-radius: 50%;
+
+box-shadow:
+    0 0 0 3px #003366;
+```
+
+}
+
+.timeline-item:hover {
+transform: translateX(8px);
+
+```
+box-shadow:
+    0 10px 25px rgba(0, 0, 0, 0.14);
+```
+
+}
+
+.timeline-item h3 {
+color: #003366;
+font-size: 1.25rem;
+margin-bottom: 12px;
+}
+
+.timeline-item p {
+color: #555555;
+margin: 7px 0;
+}
+
+.timeline-item strong {
+color: #222222;
+}
+
+/* =========================================================
+10. EXPERIENCE SECTION
+========================================================= */
+
+#experience {
+max-width: 1100px;
+padding: 60px 30px;
+}
+
+.experience-container {
+display: flex;
+flex-direction: column;
+gap: 30px;
+}
+
+.experience-card {
+background-color: #ffffff;
+
+```
+padding: 30px;
+
+border-left:
+    6px solid #003366;
+
+border-radius: 0 12px 12px 0;
+
+box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08);
+
+transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+```
+
+}
+
+.experience-card:hover {
+transform: translateY(-6px);
+
+```
+box-shadow:
+    0 12px 25px rgba(0, 0, 0, 0.14);
+```
+
+}
+
+.experience-card h3 {
+color: #003366;
+font-size: 1.5rem;
+margin-bottom: 15px;
+}
+
+.experience-card p {
+color: #555555;
+margin: 8px 0;
+line-height: 1.6;
+}
+
+.experience-card strong {
+color: #222222;
+}
+
+.experience-card h4 {
+color: #003366;
+font-size: 1.1rem;
+
+```
+margin-top: 25px;
+margin-bottom: 12px;
+```
+
+}
+
+.experience-card ul {
+list-style: none;
+padding: 0;
+}
+
+.experience-card ul li {
+position: relative;
+
+```
+padding-left: 28px;
+margin-bottom: 12px;
+
+color: #444444;
+line-height: 1.6;
+```
+
+}
+
+.experience-card ul li::before {
+content: "✓";
+
+```
+position: absolute;
+
+left: 0;
+top: 0;
+
+color: #003366;
+
+font-weight: bold;
+```
+
+}
+
+/* =========================================================
+11. CONTACT SECTION
+========================================================= */
+
+#contact {
+max-width: 900px;
+padding: 60px 30px;
+}
+
+.contact-container {
+background-color: #ffffff;
+
+```
+padding: 35px;
+
+border-radius: 12px;
+
+box-shadow:
+    0 6px 15px rgba(0, 0, 0, 0.08);
+```
+
+}
+
+.contact-info {
+display: flex;
+flex-direction: column;
+gap: 20px;
+}
+
+.contact-info p {
+display: flex;
+align-items: center;
+gap: 12px;
+
+```
+color: #333333;
+
+font-size: 1rem;
+line-height: 1.6;
+
+padding-bottom: 15px;
+
+border-bottom:
+    1px solid #eeeeee;
+```
+
+}
+
+.contact-info p:last-child {
+border-bottom: none;
+padding-bottom: 0;
+}
+
+.contact-info strong {
+color: #003366;
+}
+
+.contact-info a {
+color: #0055aa;
+text-decoration: none;
+}
+
+.contact-info a:hover {
+color: #003366;
+text-decoration: underline;
+}
+
+/* =========================================================
+12. FOOTER
+========================================================= */
+
+footer {
+background-color: #003366;
+
+```
+color: #ffffff;
+
+text-align: center;
+
+padding: 35px 20px;
+
+margin-top: 60px;
+```
+
+}
+
+footer p {
+font-size: 1rem;
+
+```
+margin-bottom: 20px;
+
+letter-spacing: 0.3px;
+```
+
+}
+
+.social-links {
+display: flex;
+
+```
+justify-content: center;
+align-items: center;
+
+gap: 15px;
+
+flex-wrap: wrap;
+```
+
+}
+
+.social-links a {
+display: inline-block;
+
+```
+color: #ffffff;
+
+text-decoration: none;
+
+padding: 9px 18px;
+
+border:
+    2px solid #ffffff;
+
+border-radius: 30px;
+
+font-weight: 500;
+```
+
+}
+
+.social-links a:hover {
+background-color: #ffffff;
+
+```
+color: #003366;
+
+transform: translateY(-4px);
+```
+
+}
+
+/* =========================================================
+13. TABLET RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 900px) {
+
+```
+nav {
+    padding: 15px 20px;
+}
+
+nav ul {
+    gap: 15px;
+}
+
+.hero {
+    padding: 70px 30px;
+    gap: 40px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+}
+
+.hero-image img {
+    width: 240px;
+    height: 240px;
+}
+
+.projects-container {
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+}
+```
+
+}
+
+/* =========================================================
+14. MOBILE RESPONSIVE DESIGN
+========================================================= */
+
+@media (max-width: 768px) {
+
+```
+/* Navigation */
+
+nav {
+    flex-direction: column;
+
+    padding: 15px;
+
+    gap: 15px;
+}
+
+nav ul {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 10px 18px;
+}
+
+nav ul li a {
+    font-size: 0.9rem;
+}
+
+
+/* Hero */
+
+.hero {
+    min-height: auto;
+
+    flex-direction: column-reverse;
+
+    text-align: center;
+
+    padding: 60px 20px;
+
+    gap: 40px;
+}
+
+.hero-content {
+    max-width: 100%;
+}
+
+.hero-content h1 {
+    font-size: 2.2rem;
+}
+
+.hero-content h2 {
+    font-size: 1.35rem;
+}
+
+.hero-content p {
+    font-size: 0.95rem;
+}
+
+.hero-image img {
+    width: 220px;
+    height: 220px;
+}
+
+
+/* General Sections */
+
+#about,
+#skills,
+#projects,
+#education,
+#experience,
+#contact {
+    margin: 40px auto;
+    padding: 45px 20px;
+}
+
+#about h2,
+#skills h2,
+#projects h2,
+#education h2,
+#experience h2,
+#contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 25px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    gap: 15px;
+}
+
+.skill-card {
+    width: calc(50% - 10px);
+    min-height: 110px;
+    padding: 20px;
+}
+
+
+/* Projects */
+
+.projects-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    padding: 25px;
+}
+
+
+/* Education */
+
+.education-timeline {
+    padding-left: 30px;
+}
+
+.timeline-item {
+    padding: 20px;
+}
+
+.timeline-item::before {
+    width: 14px;
+    height: 14px;
+
+    left: -40px;
+
+    top: 25px;
+
+    border-width: 3px;
+}
+
+.timeline-item h3 {
+    font-size: 1.1rem;
+}
+
+
+/* Experience */
+
+.experience-card {
+    padding: 22px;
+
+    border-left-width: 4px;
+}
+
+.experience-card h3 {
+    font-size: 1.3rem;
+}
+
+
+/* Contact */
+
+.contact-container {
+    padding: 25px 20px;
+}
+
+.contact-info p {
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    gap: 5px;
+
+    font-size: 0.95rem;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 30px 15px;
+}
+
+.social-links {
+    gap: 10px;
+}
+
+.social-links a {
+    width: 100%;
+    max-width: 220px;
+}
+```
+
+}
+
+/* =========================================================
+15. SMALL MOBILE DEVICES
+========================================================= */
+
+@media (max-width: 480px) {
+
+```
+.logo {
+    font-size: 1.3rem;
+}
+
+nav ul {
+    gap: 8px 12px;
+}
+
+nav ul li a {
+    font-size: 0.82rem;
+}
+
+.hero {
+    padding: 45px 15px;
+}
+
+.hero-content h1 {
+    font-size: 1.9rem;
+}
+
+.hero-content h2 {
+    font-size: 1.2rem;
+}
+
+.hero-image img {
+    width: 190px;
+    height: 190px;
+}
+
+.skill-card {
+    width: 100%;
+    max-width: 300px;
+}
+
+#about,
+#skills,
+#projects,
+#education,
+#experience,
+#contact {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.timeline-item {
+    padding: 18px;
+}
+
+.experience-card {
+    padding: 18px;
+}
+
+.contact-container {
+    padding: 20px 15px;
+}
+```
+
+}/* =========================================================
+   PORTFOLIO WEBSITE
+   MAIN STYLESHEET
+========================================================= */
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* ==========================
-   Navigation Bar
-========================== */
-header {
-    background-color: #003366;
+html {
+    scroll-behavior: smooth;
 }
 
-nav {
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f5f7fa;
+    color: #333333;
+    line-height: 1.6;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+a {
+    transition: all 0.3s ease;
+}
+
+section {
+    scroll-margin-top: 90px;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+header {
+    width: 100%;
+    background: #003366;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.navbar {
+    max-width: 1200px;
+    min-height: 70px;
+    margin: 0 auto;
+    padding: 15px 30px;
+
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 15px 40px;
+    justify-content: space-between;
+
+    gap: 30px;
 }
 
 .logo {
     color: #ffffff;
     text-decoration: none;
+
     font-size: 1.5rem;
-    font-weight: bold;
+    font-weight: 700;
+
+    white-space: nowrap;
 }
 
-nav ul {
-    display: flex;
-    list-style: none;
-}
-
-nav ul li {
-    margin-left: 25px;
-}
-
-nav ul li a {
-    color: #ffffff;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
+.logo:hover {
     color: #66b3ff;
 }
 
- /* ==========================
-   About Section
-   (Add below your existing CSS)
-========================== */
+.nav-links {
+    list-style: none;
 
-#about {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 24px;
 }
 
-#about h2 {
-    font-size: 2rem;
-    margin-bottom: 20px;
-    color: #003366;
+.nav-links a {
+    color: #ffffff;
+    text-decoration: none;
+
+    font-size: 0.95rem;
+    font-weight: 500;
+
+    padding: 8px 0;
 }
 
-#about p {
+.nav-links a:hover {
+    color: #66b3ff;
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.hero {
+    width: 100%;
+    max-width: 1200px;
+
+    min-height: calc(100vh - 70px);
+
+    margin: 0 auto;
+
+    padding: 70px 40px;
+
+    /*
+       TWO COLUMNS:
+
+       LEFT  = Text
+       RIGHT = Passport
+    */
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.2fr) minmax(320px, 0.8fr);
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+/* =========================================================
+   HERO CONTENT - LEFT SIDE
+========================================================= */
+
+.hero-content {
+    width: 100%;
+    max-width: 650px;
+}
+
+.welcome-text {
+    color: #0055aa;
+
     font-size: 1rem;
-    line-height: 1.8;
-    color: #333333;
-    margin-bottom: 20px;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
 }
 
-#about h3 {
-    font-size: 1.5rem;
-    margin: 30px 0 15px;
+.hero-content h1 {
+    color: #222222;
+
+    font-size: 3.2rem;
+    line-height: 1.2;
+
+    margin-bottom: 10px;
+}
+
+.hero-content h1 span {
     color: #003366;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #about {
-        padding: 20px 15px;
-        margin: 40px auto;
-    }
+.hero-content h2 {
+    color: #0055aa;
 
-    #about h2 {
-        font-size: 1.75rem;
-    }
+    font-size: 1.6rem;
 
-    #about h3 {
-        font-size: 1.3rem;
-    }
-
-    #about p {
-        font-size: 0.95rem;
-        line-height: 1.7;
-    }
+    margin-bottom: 25px;
 }
 
-/* ==========================
-   Skills Section
-   (Add below your existing CSS)
-========================== */
+.hero-description {
+    color: #555555;
 
-#skills {
+    font-size: 1.05rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.hero-buttons {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 30px;
+
+    flex-wrap: wrap;
+}
+
+.btn {
+    display: inline-block;
+
+    padding: 13px 23px;
+
+    border-radius: 6px;
+
+    text-decoration: none;
+
+    font-weight: 600;
+}
+
+.primary-btn {
+    background: #003366;
+    color: #ffffff;
+
+    box-shadow: 0 5px 12px rgba(0, 0, 0, 0.15);
+}
+
+.primary-btn:hover {
+    background: #0055aa;
+
+    transform: translateY(-3px);
+}
+
+.secondary-btn {
+    color: #003366;
+
+    border: 2px solid #003366;
+
+    background: transparent;
+}
+
+.secondary-btn:hover {
+    background: #003366;
+
+    color: #ffffff;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================================================
+   PASSPORT / PROFILE IMAGE
+========================================================= */
+
+/*
+   RIGHT SIDE OF HERO
+*/
+
+.hero-image {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    justify-self: center;
+}
+
+
+/*
+   CIRCULAR PASSPORT FRAME
+
+   IMPORTANT:
+   width and height are EXACTLY the same.
+*/
+
+.image-frame {
+    width: 340px;
+    height: 340px;
+
+    padding: 8px;
+
+    background: #ffffff;
+
+    border: 8px solid #003366;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.18),
+        0 0 0 8px rgba(0, 51, 102, 0.08);
+
+    transition:
+        transform 0.4s ease,
+        box-shadow 0.4s ease;
+}
+
+
+/*
+   Subtle hover effect
+*/
+
+.image-frame:hover {
+    transform: translateY(-8px);
+
+    box-shadow:
+        0 22px 45px rgba(0, 0, 0, 0.22),
+        0 0 0 10px rgba(0, 51, 102, 0.10);
+}
+
+
+/*
+   ACTUAL PASSPORT IMAGE
+*/
+
+.image-frame img {
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+
+    /*
+       Move the crop slightly toward the top.
+
+       This is useful for a passport/profile photo
+       because the person's face is normally toward
+       the upper part of the photograph.
+    */
+    object-position: center center;
+
+    border-radius: 50%;
+}
+
+
+/* =========================================================
+   GENERAL SECTION
+========================================================= */
+
+.section {
+    padding: 90px 30px;
+}
+
+.section-container {
     max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
+    margin: 0 auto;
+}
+
+.section-title {
+    color: #003366;
+
+    text-align: center;
+
+    font-size: 2.2rem;
+
+    margin-bottom: 50px;
+
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    background: #0055aa;
+
+    margin: 12px auto 0;
+
+    border-radius: 5px;
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+
+.about-content {
+    max-width: 850px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.07);
+
     text-align: center;
 }
 
-#skills h2 {
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 30px;
+.about-content p {
+    color: #555555;
+
+    font-size: 1rem;
+
+    line-height: 1.8;
+
+    margin-bottom: 20px;
 }
+
+.about-content h3 {
+    color: #003366;
+
+    font-size: 1.5rem;
+
+    margin: 30px 0 15px;
+}
+
+
+/* =========================================================
+   SKILLS
+========================================================= */
 
 .skills-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
 }
 
 .skill-card {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 25px;
-    width: 180px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    background: #ffffff;
 
-.skill-card h3 {
-    color: #003366;
-    font-size: 1.2rem;
+    padding: 30px 20px;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
 }
 
 .skill-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.13);
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .skill-card {
-        width: 100%;
-        max-width: 300px;
-    }
+.skill-icon {
+    width: 60px;
+    height: 60px;
+
+    margin: 0 auto 18px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background: #003366;
+
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 0.85rem;
+    font-weight: 700;
 }
 
-/* ==========================
-   Projects Section
-   (Add below your existing CSS)
-========================== */
-
-#projects {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
-    text-align: center;
-}
-
-#projects h2 {
-    font-size: 2rem;
+.skill-card h3 {
     color: #003366;
-    margin-bottom: 30px;
+
+    font-size: 1.25rem;
+
+    margin-bottom: 8px;
 }
+
+.skill-card p {
+    color: #666666;
+
+    font-size: 0.9rem;
+}
+
+
+/* =========================================================
+   PROJECTS
+========================================================= */
 
 .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
     gap: 25px;
 }
 
 .project-card {
-    background-color: #ffffff;
-    width: 320px;
-    padding: 25px;
-    border-radius: 12px;
-    text-align: left;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.07);
+
+    display: flex;
+
+    flex-direction: column;
+
+    transition: all 0.3s ease;
 }
 
 .project-card:hover {
     transform: translateY(-8px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.13);
+}
+
+.project-number {
+    color: #0055aa;
+
+    font-size: 0.9rem;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
 }
 
 .project-card h3 {
     color: #003366;
+
+    font-size: 1.3rem;
+
     margin-bottom: 15px;
 }
 
 .project-card p {
-    color: #333333;
-    line-height: 1.6;
-    margin-bottom: 20px;
+    color: #555555;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+    flex-grow: 1;
 }
 
-/* Buttons */
-.project-card a {
-    display: inline-block;
-    text-decoration: none;
-    background-color: #003366;
-    color: #ffffff;
-    padding: 10px 18px;
-    border-radius: 6px;
-    margin-right: 10px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
-}
-
-.project-card a:hover {
-    background-color: #0055aa;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    .project-card {
-        width: 100%;
-        max-width: 350px;
-    }
-}
-
-/* ==========================
-   Education Section
-   (Add below your existing CSS)
-========================== */
-
-#education {
-    max-width: 1000px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-#education h2 {
-    text-align: center;
-    font-size: 2rem;
+.project-link {
     color: #003366;
-    margin-bottom: 40px;
+
+    text-decoration: none;
+
+    font-weight: 600;
 }
 
-/* Timeline Container */
+.project-link:hover {
+    color: #0055aa;
+
+    transform: translateX(4px);
+}
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
 .education-timeline {
+    max-width: 900px;
+
+    margin: 0 auto;
+
     position: relative;
-    padding-left: 40px;
-    border-left: 4px solid #003366;
 }
 
-/* Timeline Cards */
+.education-timeline::before {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    bottom: 0;
+
+    left: 20px;
+
+    width: 3px;
+
+    background: #003366;
+}
+
 .timeline-item {
     position: relative;
-    background: #ffffff;
-    padding: 20px 25px;
-    margin-bottom: 30px;
-    border-radius: 12px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    padding-left: 70px;
+
+    margin-bottom: 35px;
 }
 
-/* Timeline Circle */
-.timeline-item::before {
-    content: "";
+.timeline-dot {
     position: absolute;
-    width: 18px;
-    height: 18px;
-    background-color: #003366;
-    border: 4px solid #ffffff;
-    border-radius: 50%;
-    left: -52px;
+
+    left: 10px;
     top: 25px;
-    box-shadow: 0 0 0 3px #003366;
+
+    width: 23px;
+    height: 23px;
+
+    background: #003366;
+
+    border: 4px solid #ffffff;
+
+    border-radius: 50%;
+
+    box-shadow:
+        0 0 0 2px #003366;
+
+    z-index: 2;
 }
 
-/* Hover Effect */
-.timeline-item:hover {
-    transform: translateX(8px);
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+.timeline-content {
+    background: #ffffff;
+
+    padding: 25px 30px;
+
+    border-radius: 12px;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
 }
 
-.timeline-item h3 {
+.timeline-content:hover {
+    transform: translateX(6px);
+
+    box-shadow:
+        0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.timeline-year {
+    display: inline-block;
+
+    background: #003366;
+
+    color: #ffffff;
+
+    padding: 5px 12px;
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+
+    margin-bottom: 12px;
+}
+
+.timeline-content h3 {
     color: #003366;
-    font-size: 1.3rem;
+
+    font-size: 1.25rem;
+
     margin-bottom: 10px;
 }
 
-.timeline-item p {
+.timeline-content p {
     color: #555555;
-    line-height: 1.6;
-    margin: 6px 0;
 }
 
-.timeline-item strong {
-    color: #222222;
-}
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    .education-timeline {
-        padding-left: 25px;
-    }
+/* =========================================================
+   EXPERIENCE
+========================================================= */
 
-    .timeline-item {
-        padding: 18px;
-    }
-
-    .timeline-item::before {
-        left: -37px;
-        width: 14px;
-        height: 14px;
-    }
-
-    #education h2 {
-        font-size: 1.8rem;
-    }
-
-    .timeline-item h3 {
-        font-size: 1.1rem;
-    }
-}
-
-/* ==========================
-   Experience Section
-   (Add below your existing CSS)
-========================== */
-
-#experience {
-    max-width: 1100px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-#experience h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 40px;
-}
-
-/* Experience Container */
 .experience-container {
     display: flex;
+
     flex-direction: column;
-    gap: 30px;
+
+    gap: 25px;
 }
 
-/* Experience Card */
 .experience-card {
     background: #ffffff;
+
+    padding: 30px;
+
     border-left: 6px solid #003366;
-    border-radius: 12px;
-    padding: 25px 30px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border-radius: 0 12px 12px 0;
+
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.07);
+
+    transition: all 0.3s ease;
 }
 
 .experience-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.12);
 }
 
-/* Role */
+.experience-date {
+    display: inline-block;
+
+    color: #0055aa;
+
+    font-size: 0.9rem;
+
+    font-weight: 600;
+
+    margin-bottom: 8px;
+}
+
 .experience-card h3 {
     color: #003366;
-    font-size: 1.5rem;
-    margin-bottom: 15px;
+
+    font-size: 1.4rem;
+
+    margin-bottom: 5px;
 }
 
-/* Company & Duration */
-.experience-card p {
-    margin: 8px 0;
+.company {
     color: #555555;
-    font-size: 1rem;
-    line-height: 1.6;
+
+    font-weight: 600;
+
+    margin-bottom: 20px;
 }
 
-.experience-card strong {
-    color: #222222;
-}
-
-/* Responsibilities Heading */
 .experience-card h4 {
-    margin-top: 20px;
-    margin-bottom: 12px;
     color: #003366;
-    font-size: 1.1rem;
+
+    margin-bottom: 12px;
 }
 
-/* Responsibilities List */
 .experience-card ul {
     list-style: none;
-    padding-left: 0;
 }
 
-.experience-card ul li {
+.experience-card li {
     position: relative;
-    padding-left: 28px;
-    margin-bottom: 12px;
-    color: #444444;
-    line-height: 1.6;
+
+    color: #555555;
+
+    padding-left: 25px;
+
+    margin-bottom: 10px;
 }
 
-/* Custom Bullet */
-.experience-card ul li::before {
+.experience-card li::before {
     content: "✓";
+
     position: absolute;
+
     left: 0;
-    top: 0;
+
     color: #003366;
+
     font-weight: bold;
-    font-size: 1rem;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #experience {
-        padding: 20px 15px;
-    }
 
-    #experience h2 {
-        font-size: 1.8rem;
-    }
+/* =========================================================
+   CONTACT
+========================================================= */
 
-    .experience-card {
-        padding: 20px;
-    }
-
-    .experience-card h3 {
-        font-size: 1.3rem;
-    }
-
-    .experience-card p,
-    .experience-card ul li {
-        font-size: 0.95rem;
-    }
-}
-
-/* ==========================
-   Contact Section
-   (Add below your existing CSS)
-========================== */
-
-#contact {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 20px;
-}
-
-#contact h2 {
-    text-align: center;
-    font-size: 2rem;
-    color: #003366;
-    margin-bottom: 40px;
-}
-
-/* Contact Card */
 .contact-container {
-    background-color: #ffffff;
-    border-radius: 12px;
-    padding: 30px;
-    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    padding: 40px;
+
+    border-radius: 15px;
+
+    box-shadow:
+        0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+.contact-intro {
+    text-align: center;
+
+    margin-bottom: 35px;
+}
+
+.contact-intro h3 {
+    color: #003366;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 10px;
+}
+
+.contact-intro p {
+    color: #666666;
 }
 
 .contact-info {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
     gap: 20px;
 }
 
-.contact-info p {
+.contact-item {
+    padding: 20px;
+
+    background: #f5f7fa;
+
+    border-radius: 10px;
+
     display: flex;
-    align-items: center;
-    gap: 12px;
-    color: #333333;
-    font-size: 1rem;
-    line-height: 1.6;
+
+    flex-direction: column;
+
+    gap: 5px;
 }
 
-/* Icon Placeholder */
-.contact-info p::before {
-    content: "📍";
-    font-size: 1.2rem;
-    flex-shrink: 0;
-}
-
-/* Links */
-.contact-info a {
+.contact-label {
     color: #003366;
-    text-decoration: none;
-    transition: color 0.3s ease;
+
+    font-weight: 700;
+
+    font-size: 0.9rem;
 }
 
-.contact-info a:hover {
+.contact-item a {
     color: #0055aa;
+
+    text-decoration: none;
+
+    word-break: break-word;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    #contact {
-        padding: 20px 15px;
-    }
+.contact-item a:hover {
+    color: #003366;
 
-    .contact-container {
-        padding: 20px;
-    }
-
-    #contact h2 {
-        font-size: 1.8rem;
-    }
-
-    .contact-info p {
-        font-size: 0.95rem;
-        align-items: flex-start;
-    }
+    text-decoration: underline;
 }
 
-/* ==========================
-   Footer Section
-   (Add below your existing CSS)
-========================== */
+
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer {
     background: #003366;
+
     color: #ffffff;
+
     text-align: center;
-    padding: 30px 20px;
-    margin-top: 60px;
+
+    padding: 35px 20px;
+
+    margin-top: 40px;
 }
 
-/* Copyright */
 footer p {
-    font-size: 1rem;
     margin-bottom: 20px;
-    letter-spacing: 0.5px;
 }
 
-/* Social Media Links */
 .social-links {
     display: flex;
+
     justify-content: center;
-    align-items: center;
-    gap: 20px;
+
+    gap: 15px;
+
     flex-wrap: wrap;
 }
 
 .social-links a {
-    display: inline-block;
     color: #ffffff;
+
     text-decoration: none;
-    padding: 10px 18px;
-    border: 2px solid #ffffff;
-    border-radius: 30px;
-    font-weight: 500;
-    transition: all 0.3s ease;
+
+    border: 1px solid #ffffff;
+
+    padding: 8px 18px;
+
+    border-radius: 25px;
 }
 
-/* Hover Effect */
 .social-links a:hover {
-    background-color: #ffffff;
+    background: #ffffff;
+
     color: #003366;
-    transform: translateY(-4px);
-    box-shadow: 0 8px 18px rgba(255, 255, 255, 0.25);
+
+    transform: translateY(-3px);
 }
 
-/* Responsive Design */
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1000px) {
+
+    .hero {
+        grid-template-columns: minmax(0, 1fr) 300px;
+
+        gap: 35px;
+
+        padding: 60px 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2.7rem;
+    }
+
+    .image-frame {
+        width: 280px;
+        height: 280px;
+    }
+
+    .skills-container,
+    .projects-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
 @media (max-width: 768px) {
-    footer {
-        padding: 25px 15px;
-    }
 
-    footer p {
-        font-size: 0.95rem;
-    }
+    /* Navigation */
 
-    .social-links {
+    .navbar {
+        flex-direction: column;
+
+        padding: 15px;
+
         gap: 15px;
     }
 
-    .social-links a {
+    .nav-links {
         width: 100%;
-        max-width: 220px;
+
+        justify-content: center;
+
+        flex-wrap: wrap;
+
+        gap: 10px 15px;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        min-height: auto;
+
+        grid-template-columns: 1fr;
+
+        padding: 60px 20px;
+
+        gap: 40px;
+
         text-align: center;
+    }
+
+
+    /*
+       Passport comes first visually
+       on mobile.
+    */
+
+    .hero-image {
+        grid-row: 1;
+
+        width: 100%;
+
+        justify-self: center;
+    }
+
+
+    .hero-content {
+        grid-row: 2;
+
+        max-width: 100%;
+    }
+
+
+    .hero-content h1 {
+        font-size: 2.3rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+
+    /* Circular passport */
+
+    .image-frame {
+        width: 260px;
+        height: 260px;
+
+        border-width: 7px;
+    }
+
+
+    /* Buttons */
+
+    .hero-buttons {
+        justify-content: center;
+
+        flex-wrap: wrap;
+    }
+
+
+    /* Sections */
+
+    .section {
+        padding: 65px 20px;
+    }
+
+    .section-title {
+        font-size: 1.9rem;
+    }
+
+
+    /* Skills */
+
+    .skills-container {
+        grid-template-columns:
+            repeat(2, 1fr);
+
+        gap: 15px;
+    }
+
+
+    /* Projects */
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+
+    /* Education */
+
+    .education-timeline::before {
+        left: 12px;
+    }
+
+    .timeline-item {
+        padding-left: 45px;
+    }
+
+    .timeline-dot {
+        left: 2px;
+    }
+
+
+    /* Contact */
+
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-container {
+        padding: 25px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .logo {
+        font-size: 1.25rem;
+    }
+
+    .nav-links {
+        gap: 8px 12px;
+    }
+
+    .nav-links a {
+        font-size: 0.78rem;
+    }
+
+
+    /* Hero */
+
+    .hero {
+        padding: 45px 15px;
+
+        gap: 30px;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.15rem;
+    }
+
+
+    /* Passport */
+
+    .image-frame {
+        width: 220px;
+        height: 220px;
+
+        border-width: 6px;
+    }
+
+
+    /* Buttons */
+
+    .hero-buttons {
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+
+        max-width: 250px;
+
+        text-align: center;
+    }
+
+
+    /* Other sections */
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .about-content,
+    .contact-container {
+        padding: 25px 20px;
+    }
+
+    .timeline-content {
+        padding: 20px;
+    }
+
+    .experience-card {
+        padding: 22px;
     }
 }

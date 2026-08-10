@@ -1,240 +1,720 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+
+    <meta name="description"
+        content="John Paul's personal portfolio website showcasing frontend development skills, projects, education, work experience and contact information.">
+
+    <meta name="author" content="John Paul">
+
+    <title>John Paul | Frontend Developer Portfolio</title>
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="css/stylesheet.css">
 </head>
+
 <body>
 
+    <!-- =========================
+         HEADER
+    ========================== -->
     <header>
-    <nav>
-        <a href="index.html" class="logo">My Portfolio</a>
 
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-</header>
+        <nav class="navbar">
 
-<section id="home">
-    <div class="hero-content">
-        <h1>Hello, I'm John Paul</h1>
+            <a href="#home" class="logo">
+                My Portfolio
+            </a>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="#about">About</a>
+                </li>
+
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+
+                <li>
+                    <a href="#education">Education</a>
+                </li>
+
+                <li>
+                    <a href="#experience">Experience</a>
+                </li>
+
+                <li>
+                    <a href="#contact">Contact</a>
+                </li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================== -->
+    <main>
+
+
+        <!-- =========================
+             HERO / HOME
+        ========================== -->
+        <section id="home" class="hero">
+
+            <div class="hero-content">
+
+                <p class="welcome-text">
+                    Welcome to my portfolio
+                </p>
+
+                <h1>
+                    Hello, I'm
+                    <span>John Paul</span>
+                </h1>
+
+                <h2>
+                    Frontend Developer
+                </h2>
+
+                <p class="hero-description">
+                    I am a beginner Frontend Developer with a passion for
+                    creating clean, responsive, and user-friendly websites
+                    using HTML5 and CSS3.
+                </p>
+
+                <p class="hero-description">
+                    I enjoy learning new web technologies and continuously
+                    improving my coding and problem-solving skills.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="resume.pdf"
+                       class="btn primary-btn"
+                       download>
+                        Download Resume
+                    </a>
+
+                    <a href="#contact"
+                       class="btn secondary-btn">
+                        Contact Me
+                    </a>
+
+                </div>
+
+            </div>
+
+
+            <!-- PASSPORT / PROFILE IMAGE -->
+            <div class="hero-image">
+
+                <div class="image-frame">
+
+                    <img
+                        src="images/onyeka.png"
+                        alt="Profile picture of John Paul"
+                    >
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             ABOUT
+        ========================== -->
+        <section id="about" class="section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    About Me
+                </h2>
+
+                <div class="about-content">
+
+                    <p>
+                        I am a beginner Frontend Developer with a passion
+                        for creating clean, responsive, and user-friendly
+                        websites using HTML5 and CSS3.
+                    </p>
+
+                    <p>
+                        I enjoy learning new web technologies and continuously
+                        improving my coding and problem-solving skills.
+                    </p>
+
+                    <h3>
+                        Career Objective
+                    </h3>
+
+                    <p>
+                        My goal is to build modern, accessible, and responsive
+                        web applications while gaining professional experience
+                        as a Frontend Developer.
+                    </p>
+
+                    <p>
+                        I am committed to continuous learning and contributing
+                        to projects that deliver meaningful user experiences.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             SKILLS
+        ========================== -->
+        <section id="skills" class="section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    My Skills
+                </h2>
+
+                <div class="skills-container">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">HTML</div>
+                        <h3>HTML5</h3>
+                        <p>Semantic and accessible web structure.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-icon">CSS</div>
+                        <h3>CSS3</h3>
+                        <p>Responsive layouts and modern styling.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-icon">Git</div>
+                        <h3>Git</h3>
+                        <p>Version control and project management.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-icon">GH</div>
+                        <h3>GitHub</h3>
+                        <p>Code hosting and collaboration.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-icon">PY</div>
+                        <h3>Python</h3>
+                        <p>Programming and problem-solving.</p>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-icon">SQL</div>
+                        <h3>SQL</h3>
+                        <p>Working with databases and data.</p>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             PROJECTS
+        ========================== -->
+        <section id="projects" class="section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    My Projects
+                </h2>
+
+                <div class="projects-container">
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            01
+                        </div>
+
+                        <h3>
+                            Personal Portfolio Website
+                        </h3>
+
+                        <p>
+                            A responsive personal portfolio website built
+                            with HTML5 and CSS3 to showcase my skills,
+                            projects, education and contact information.
+                        </p>
+
+                        <a
+                            href="https://github.com/kachi1122"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View on GitHub →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            02
+                        </div>
+
+                        <h3>
+                            Landing Page
+                        </h3>
+
+                        <p>
+                            A modern and responsive landing page designed
+                            using semantic HTML and CSS Flexbox for an
+                            engaging user experience.
+                        </p>
+
+                        <a
+                            href="https://github.com/kachi1122"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View on GitHub →
+                        </a>
+
+                    </article>
+
+
+                    <article class="project-card">
+
+                        <div class="project-number">
+                            03
+                        </div>
+
+                        <h3>
+                            Student Registration Form
+                        </h3>
+
+                        <p>
+                            A clean and accessible registration form featuring
+                            HTML5 form elements and responsive styling for
+                            multiple screen sizes.
+                        </p>
+
+                        <a
+                            href="https://github.com/kachi1122"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="project-link"
+                        >
+                            View on GitHub →
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION
+        ========================== -->
+        <section id="education" class="section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    Education
+                </h2>
+
+                <div class="education-timeline">
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-year">
+                                2011 - 2013
+                            </span>
+
+                            <h3>
+                                Federal Polytechnic Nasarawa
+                            </h3>
+
+                            <p>
+                                <strong>College:</strong>
+                                Mechanical Engineering
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-year">
+                                2007 - 2009
+                            </span>
+
+                            <h3>
+                                Metallurgical Training Institute
+                            </h3>
+
+                            <p>
+                                <strong>College:</strong>
+                                Mechanical Maintenance Engineering
+                            </p>
+
+                        </div>
+
+                    </article>
+
+
+                    <article class="timeline-item">
+
+                        <div class="timeline-dot"></div>
+
+                        <div class="timeline-content">
+
+                            <span class="timeline-year">
+                                2000 - 2006
+                            </span>
+
+                            <h3>
+                                Army Day Secondary School Onitsha
+                            </h3>
+
+                            <p>
+                                <strong>School:</strong>
+                                Secondary Education
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             EXPERIENCE
+        ========================== -->
+        <section id="experience" class="section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    Work Experience
+                </h2>
+
+                <div class="experience-container">
+
+
+                    <article class="experience-card">
+
+                        <span class="experience-date">
+                            June 2025 – August 2025
+                        </span>
+
+                        <h3>
+                            Frontend Developer Intern
+                        </h3>
+
+                        <p class="company">
+                            ABC Tech Solutions
+                        </p>
+
+                        <h4>
+                            Responsibilities
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Developed responsive web pages using
+                                HTML5 and CSS3.
+                            </li>
+
+                            <li>
+                                Collaborated with team members to improve
+                                website layouts.
+                            </li>
+
+                            <li>
+                                Maintained and updated existing website
+                                content.
+                            </li>
+
+                            <li>
+                                Tested web pages across different browsers
+                                and devices.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+
+                    <article class="experience-card">
+
+                        <span class="experience-date">
+                            January 2024 – Present
+                        </span>
+
+                        <h3>
+                            Freelance Web Developer
+                        </h3>
+
+                        <p class="company">
+                            Self-Employed
+                        </p>
+
+                        <h4>
+                            Responsibilities
+                        </h4>
+
+                        <ul>
+
+                            <li>
+                                Designed and built responsive websites
+                                for clients.
+                            </li>
+
+                            <li>
+                                Customized website layouts to meet
+                                client requirements.
+                            </li>
+
+                            <li>
+                                Improved website performance and
+                                accessibility.
+                            </li>
+
+                            <li>
+                                Provided ongoing maintenance and support.
+                            </li>
+
+                        </ul>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             CONTACT
+        ========================== -->
+        <section id="contact" class="section">
+
+            <div class="section-container">
+
+                <h2 class="section-title">
+                    Contact Me
+                </h2>
+
+                <div class="contact-container">
+
+                    <div class="contact-intro">
+
+                        <h3>
+                            Let's Work Together
+                        </h3>
+
+                        <p>
+                            If you have a project, opportunity, or simply
+                            want to connect, feel free to reach out to me.
+                        </p>
+
+                    </div>
+
+
+                    <div class="contact-info">
+
+                        <div class="contact-item">
+
+                            <span class="contact-label">
+                                Email
+                            </span>
+
+                            <a href="mailto:kachi07@yahoo.com">
+                                kachi07@yahoo.com
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span class="contact-label">
+                                Phone
+                            </span>
+
+                            <a href="tel:+2348064859361">
+                                +234 806 485 9361
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span class="contact-label">
+                                Phone
+                            </span>
+
+                            <a href="tel:+2348058208396">
+                                +234 805 820 8396
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span class="contact-label">
+                                LinkedIn
+                            </span>
+
+                            <a
+                                href="https://www.linkedin.com/in/nwobi-cousin-571978163/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn Profile
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span class="contact-label">
+                                GitHub
+                            </span>
+
+                            <a
+                                href="https://github.com/kachi1122"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                github.com/kachi1122
+                            </a>
+
+                        </div>
+
+
+                        <div class="contact-item">
+
+                            <span class="contact-label">
+                                Location
+                            </span>
+
+                            <span>
+                                Onitsha, Anambra State, Nigeria
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer>
+
         <p>
-            I'm a passionate Frontend Developer who enjoys building clean,
-            responsive, and user-friendly websites using HTML5 and CSS3.
+            &copy; 2026 John Paul. All Rights Reserved.
         </p>
 
-        <a href="images/resume.pdf" download>Download Resume</a>
-    </div>
+        <div class="social-links">
 
-    <div class="hero-image">
-        <img src="images/profile.jpg" alt="Profile picture of John Paul">
-    </div>
-</section>
+            <a
+                href="https://github.com/kachi1122"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                GitHub
+            </a>
 
-<section id="about">
-    <h2>About Me</h2>
+            <a
+                href="https://www.linkedin.com/in/nwobi-cousin-571978163/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                LinkedIn
+            </a>
 
-    <p>
-        I am a beginner Frontend Developer with a passion for creating clean,
-        responsive, and user-friendly websites using HTML5 and CSS3. I enjoy
-        learning new web technologies and continuously improving my coding and
-        problem-solving skills.
-    </p>
+            <a
+                href="https://twitter.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Twitter
+            </a>
 
-    <h3>Career Objective</h3>
+        </div>
 
-    <p>
-        My goal is to build modern, accessible, and responsive web applications
-        while gaining professional experience as a Frontend Developer. I am
-        committed to continuous learning and contributing to projects that
-        deliver meaningful user experiences.
-    </p>
-</section>
-
-<section id="skills">
-    <h2>Skills</h2>
-
-    <div class="skills-container">
-        <article class="skill-card">
-            <h3>HTML5</h3>
-        </article>
-
-        <article class="skill-card">
-            <h3>CSS3</h3>
-        </article>
-
-        <article class="skill-card">
-            <h3>Git</h3>
-        </article>
-
-        <article class="skill-card">
-            <h3>GitHub</h3>
-        </article>
-
-        <article class="skill-card">
-            <h3>Python</h3>
-        </article>
-
-        <article class="skill-card">
-            <h3>SQL</h3>
-        </article>
-    </div>
-</section>
-
-<section id="projects">
-    <h2>Projects</h2>
-
-    <div class="projects-container">
-        <article class="project-card">
-            <h3>Personal Portfolio Website</h3>
-            <p>
-                A responsive personal portfolio website built with HTML5 and CSS3
-                to showcase my skills, projects, and contact information.
-            </p>
-            <a href="https://github.com/kachi1122" target="_blank" rel="noopener noreferrer">GitHub</a>
-            
-        </article>
-
-        <article class="project-card">
-            <h3>Landing Page</h3>
-            <p>
-                A modern and responsive landing page designed using semantic HTML
-                and CSS Flexbox for an engaging user experience.
-            </p>
-            <a href="https://github.com/kachi1122" target="_blank" rel="noopener noreferrer">GitHub</a>
-            
-        </article>
-
-        <article class="project-card">
-            <h3>Student Registration Form</h3>
-            <p>
-                A clean and accessible registration form featuring HTML5 form
-                elements and responsive styling for multiple screen sizes.
-            </p>
-            <a href="https://github.com/kachi1122" target="_blank" rel="noopener noreferrer">GitHub</a>
-            
-        </article>
-    </div>
-</section>
-
-<section id="education">
-    <h2>Education</h2>
-
-    <div class="education-timeline">
-        <article class="timeline-item">
-            <h3>Bachelor of Science in Computer Science</h3>
-            <p><strong>College:</strong> XYZ University</p>
-            <p><strong>Year:</strong> 2021 - 2025</p>
-        </article>
-
-        <article class="timeline-item">
-            <h3>Higher Secondary School Certificate (HSSC)</h3>
-            <p><strong>College:</strong> ABC College</p>
-            <p><strong>Year:</strong> 2019 - 2021</p>
-        </article>
-
-        <article class="timeline-item">
-            <h3>Secondary School Certificate (SSC)</h3>
-            <p><strong>College:</strong> DEF High School</p>
-            <p><strong>Year:</strong> 2014 - 2019</p>
-        </article>
-    </div>
-</section>
-
-<section id="experience">
-    <h2>Experience</h2>
-
-    <div class="experience-container">
-        <article class="experience-card">
-            <h3>Frontend Developer Intern</h3>
-            <p><strong>Company:</strong> ABC Tech Solutions</p>
-            <p><strong>Duration:</strong> June 2025 – August 2025</p>
-
-            <h4>Responsibilities</h4>
-            <ul>
-                <li>Developed responsive web pages using HTML5 and CSS3.</li>
-                <li>Collaborated with team members to improve website layouts.</li>
-                <li>Maintained and updated existing website content.</li>
-                <li>Tested web pages across different browsers and devices.</li>
-            </ul>
-        </article>
-
-        <article class="experience-card">
-            <h3>Freelance Web Developer</h3>
-            <p><strong>Company:</strong> Self-Employed</p>
-            <p><strong>Duration:</strong> January 2024 – Present</p>
-
-            <h4>Responsibilities</h4>
-            <ul>
-                <li>Designed and built responsive websites for clients.</li>
-                <li>Customized website layouts to meet client requirements.</li>
-                <li>Improved website performance and accessibility.</li>
-                <li>Provided ongoing maintenance and support.</li>
-            </ul>
-        </article>
-    </div>
-</section>
-
-<section id="contact">
-    <h2>Contact Me</h2>
-
-    <div class="contact-container">
-        <article class="contact-info">
-            <p>
-                <strong>Email:</strong>
-                <a href="mailto:yourname@example.com">yourname@example.com</a>
-            </p>
-
-            <p>
-                <strong>Phone:</strong>
-                <a href="tel:+1234567890">+1 234 567 890</a>
-            </p>
-
-            <p>
-                <strong>LinkedIn:</strong>
-                <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-                    linkedin.com/in/yourusername
-                </a>
-            </p>
-
-            <p>
-                <strong>GitHub:</strong>
-                <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-                    github.com/yourusername
-                </a>
-            </p>
-
-            <p>
-                <strong>Location:</strong> Your City, Your Country
-            </p>
-        </article>
-    </div>
-</section>
-
-<footer>
-    <p>&copy; 2026 My Portfolio. All Rights Reserved.</p>
-
-    <div class="social-links">
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">
-            GitHub
-        </a>
-
-        <a href="https://www.linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer">
-            LinkedIn
-        </a>
-
-        <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer">
-            Twitter
-        </a>
-    </div>
-</footer>
+    </footer>
 
 </body>
+
 </html>
